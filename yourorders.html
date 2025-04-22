@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Your Orders | FOODSHOP</title>
+  <link rel="stylesheet" href="index.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body class="bg-orange-50 text-gray-800 min-h-screen">
+
+  <div class="container flex min-h-screen" id="container">
+    <!-- Sidebar / Navigation (unchanged) -->
+    <div id="menu" class="w-64 bg-white shadow-lg p-4">
+      <div class="title">
+        <img src="images/foodie hunter.png" alt="FOODSHOP Logo" loading="lazy" />
+      </div>
+      <div class="menu-item mt-4">
+        <a href="index.html" class="block py-2">Home</a>
+        <a href="about.html" class="block py-2">About</a>
+        <a href="services.html" class="block py-2">Services</a>
+        <a href="yourorders.html" class="block py-2 font-semibold text-orange-600">Your Orders</a>
+        <a href="wishlists.html" class="block py-2">Wishlists</a>
+        <!-- <a href="#" class="block py-2">Cart</a> -->
+        <a href="contact.html" class="block py-2">Contact</a>
+        <!-- <a href="#" class="block py-2">Checkout</a> -->
+      </div>
+    </div>
+
+    <!-- Main Orders Content -->
+    <div class="flex-1 p-6 md:p-20 overflow-y-auto">
+      <div class="max-w-6xl mx-auto">
+
+        <!-- Header -->
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-orange-600 mb-4">Your Orders</h2>
+          <p class="text-lg text-gray-700">
+            Here’s a summary of all the delicious food you've enjoyed with us!
+          </p>
+        </div>
+
+        <!-- Orders List -->
+        <div class="space-y-6 mb-16">
+          <!-- Single Order -->
+          <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+            <div class="flex justify-between items-center flex-wrap gap-4">
+              <div>
+                <h3 class="text-lg font-semibold text-gray-800">Paneer Butter Masala + Naan</h3>
+                <p class="text-sm text-gray-500">Order #1001 • Delivered on April 12, 2025</p>
+              </div>
+              <span class="bg-green-100 text-green-700 text-sm px-4 py-1 rounded-full">Delivered</span>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+            <div class="flex justify-between items-center flex-wrap gap-4">
+              <div>
+                <h3 class="text-lg font-semibold text-gray-800">Veg Biryani Combo</h3>
+                <p class="text-sm text-gray-500">Order #0998 • Delivered on April 8, 2025</p>
+              </div>
+              <span class="bg-green-100 text-green-700 text-sm px-4 py-1 rounded-full">Delivered</span>
+            </div>
+          </div>
+
+          <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+            <div class="flex justify-between items-center flex-wrap gap-4">
+              <div>
+                <h3 class="text-lg font-semibold text-gray-800">Chole Bhature</h3>
+                <p class="text-sm text-gray-500">Order #0990 • Delivered on March 30, 2025</p>
+              </div>
+              <span class="bg-green-100 text-green-700 text-sm px-4 py-1 rounded-full">Delivered</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="text-center">
+          <a href="index.html" class="inline-block bg-orange-500 hover:bg-orange-600 text-white text-lg px-8 py-3 rounded-full transition">
+            Order Again
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

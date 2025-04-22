@@ -7,6 +7,16 @@
     <title>Food Website</title>
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Google tag (gtag.js) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-9D42CDMP94"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'G-9D42CDMP94');
+</script>
 </head>
 <body>
 
@@ -17,13 +27,14 @@
                 <img src="images/foodie hunter.png" alt="" loading="lazy">
             </div>
             <div class="menu-item">
-                <a href="#">About</a>
-                <a href="#">Services</a>
-                <a href="#">Your Orders</a>
-                <a href="#">Wishlists</a>
-                <a href="#">Cart</a>
-                <a href="#">Contact</a>
-                <a href="#">Checkout</a>
+                <a href="index.html">Home</a>
+                <a href="about.html">About</a>
+                <a href="services.html">Services</a>
+                <a href="yourorders.html">Your Orders</a>
+                <a href="wishlists.html">Wishlists</a>
+                <!-- <a href="#cart">Cart</a> -->
+                <a href="contact.html">Contact</a>
+                <!-- <a href="#">Checkout</a> -->
             </div>
         </div>
 
@@ -153,6 +164,21 @@
             <p>orders</p>
         </div>
     </div>
-    <script src="index.js" type="module"></script>
+    <script src="index.js" async type="module"></script>
+
+  <!-- Service worker -->
+
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', function () {
+        navigator.serviceWorker.register('service-worker.js').then(function (registration) {
+          console.log('Service Worker registered with scope:', registration.scope);
+        }, function (err) {
+          console.log('Service Worker registration failed:', err);
+        });
+      });
+    }
+  </script>
+  
 </body>
 </html>

@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Wishlists | FOODSHOP</title>
+  <link rel="stylesheet" href="index.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body class="bg-orange-50 text-gray-800 min-h-screen">
+
+  <div class="container flex min-h-screen" id="container">
+
+    <div id="menu" class="w-64 bg-white shadow-lg p-4">
+      <div class="title">
+        <img src="images/foodie hunter.png" alt="FOODSHOP Logo" loading="lazy" />
+      </div>
+      <div class="menu-item mt-4">
+        <a href="index.html" class="block py-2">Home</a>
+        <a href="about.html" class="block py-2">About</a>
+        <a href="services.html" class="block py-2">Services</a>
+        <a href="yourorders.html" class="block py-2">Your Orders</a>
+        <a href="wishlists.html" class="block py-2 font-semibold text-orange-600">Wishlists</a>
+        <!-- <a href="#" class="block py-2">Cart</a> -->
+        <a href="contact.html" class="block py-2">Contact</a>
+        <!-- <a href="#" class="block py-2">Checkout</a> -->
+      </div>
+    </div>
+
+    <!-- Main Wishlists Content -->
+    <div class="flex-1 p-6 md:p-20 overflow-y-auto">
+      <div class="max-w-6xl mx-auto">
+
+        <!-- Header Section -->
+        <div class="text-center mb-12">
+          <h2 class="text-4xl font-bold text-orange-600 mb-4">Your Wishlists</h2>
+          <p class="text-lg text-gray-700">
+            Save your favorite dishes and come back anytime to order them again.
+          </p>
+        </div>
+
+        <!-- Wishlists Items Section -->
+        <div class="grid md:grid-cols-2 gap-8 mb-16">
+          <!-- Wishlist Item 1 -->
+          <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+            <div class="flex items-center gap-4">
+              <img src="images/paneer/palak-paneer.jpg" alt="Palak Paneer" class="w-20 h-20 object-cover rounded-full">
+              <div>
+                <h3 class="text-xl font-bold text-orange-600">Palak Paneer</h3>
+                <p class="text-gray-600 text-sm">A timeless favorite made with fresh spinach and soft paneer.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Wishlist Item 2 -->
+          <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+            <div class="flex items-center gap-4">
+              <img src="images/freedelevery.jpg" alt="Delicious Biryani" class="w-20 h-20 object-cover rounded-full">
+              <div>
+                <h3 class="text-xl font-bold text-orange-600">Veg Biryani</h3>
+                <p class="text-gray-600 text-sm">A wholesome mix of aromatic spices and mixed vegetables.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Wishlist Item 3 -->
+          <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+            <div class="flex items-center gap-4">
+              <img src="images/event.jpg" alt="Catering Special" class="w-20 h-20 object-cover rounded-full">
+              <div>
+                <h3 class="text-xl font-bold text-orange-600">Catering Special</h3>
+                <p class="text-gray-600 text-sm">Ideal for events, a feast of flavors in one platter.</p>
+              </div>
+            </div>
+          </div>
+          <!-- Wishlist Item 4 -->
+          <div class="bg-white p-6 rounded-xl shadow-md hover:shadow-lg transition">
+            <div class="flex items-center gap-4">
+              <img src="images/dine.jpg" alt="Dine-In Special" class="w-20 h-20 object-cover rounded-full">
+              <div>
+                <h3 class="text-xl font-bold text-orange-600">Dine-In Special</h3>
+                <p class="text-gray-600 text-sm">Experience the ultimate ambiance and flavor at our dine-in space.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="text-center">
+          <a href="index.html" class="inline-block bg-orange-500 hover:bg-orange-600 text-white text-lg px-8 py-3 rounded-full transition duration-300">
+            Explore Our Menu
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>

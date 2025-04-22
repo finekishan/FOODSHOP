@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+  <title>Our Services | FOODSHOP</title>
+  <link rel="stylesheet" href="index.css" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+</head>
+<body class="bg-orange-50 text-gray-800 min-h-screen">
+
+  <div class="container flex min-h-screen" id="container">
+    <!-- Sidebar / Navigation (unchanged) -->
+    <div id="menu" class="w-64 bg-white shadow-lg p-4">
+      <div class="title">
+        <img src="images/foodie hunter.png" alt="FOODSHOP Logo" loading="lazy" />
+      </div>
+      <div class="menu-item mt-4">
+        <a href="index.html" class="block py-2">Home</a>
+        <a href="about.html" class="block py-2">About</a>
+        <a href="services.html" class="block py-2">Services</a>
+        <a href="yourorders.html" class="block py-2">Your Orders</a>
+        <a href="wishlists.html" class="block py-2">Wishlists</a>
+        <!-- <a href="#" class="block py-2">Cart</a> -->
+        <a href="contact.html" class="block py-2">Contact</a>
+        <!-- <a href="#" class="block py-2">Checkout</a> -->
+      </div>
+    </div>
+
+    <!-- Main Services Content -->
+    <div class="flex-1 p-6 md:p-20 overflow-y-auto">
+      <div class="max-w-6xl mx-auto">
+
+        <!-- Header Section -->
+        <div class="text-center mb-14">
+          <h2 class="text-4xl font-bold text-orange-600 mb-4">Our Services</h2>
+          <p class="text-lg text-gray-700 max-w-2xl mx-auto">
+            We offer a variety of food services tailored to meet your cravings and needs — anytime, anywhere.
+          </p>
+        </div>
+
+        <!-- Services Cards Section -->
+        <div class="grid md:grid-cols-3 gap-10 mb-16">
+          <!-- Delivery -->
+          <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+            <img src="images/freedelevery.jpg" alt="Fast Delivery" class="mx-auto mb-4 rounded-full w-32 h-32 object-cover">
+            <h3 class="text-xl font-semibold text-orange-600 mb-2 text-center">Fast Delivery</h3>
+            <p class="text-gray-600 text-sm text-center">
+              Get your favorite dishes delivered hot and fresh to your doorstep in no time.
+            </p>
+          </div>
+
+          <!-- Catering -->
+          <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+            <img src="images/event.jpg" alt="Event Catering" class="mx-auto mb-4 rounded-full w-32 h-32 object-cover">
+            <h3 class="text-xl font-semibold text-orange-600 mb-2 text-center">Event Catering</h3>
+            <p class="text-gray-600 text-sm text-center">
+              Hosting a party or corporate event? We provide customizable catering options for all occasions.
+            </p>
+          </div>
+
+          <!-- Dine-In -->
+          <div class="bg-white p-6 rounded-2xl shadow-md hover:shadow-lg transition">
+            <img src="images/dine.jpg" alt="Dine-In" class="mx-auto mb-4 rounded-full w-32 h-32 object-cover">
+            <h3 class="text-xl font-semibold text-orange-600 mb-2 text-center">Dine-In Experience</h3>
+            <p class="text-gray-600 text-sm text-center">
+              Enjoy a cozy ambiance and excellent service at our beautifully designed dine-in space.
+            </p>
+          </div>
+        </div>
+
+        <!-- Call to Action -->
+        <div class="text-center">
+          <a href="contact.html" class="inline-block bg-orange-500 hover:bg-orange-600 text-white text-lg px-8 py-3 rounded-full transition">
+            Book Our Service
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
