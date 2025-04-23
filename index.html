@@ -172,7 +172,7 @@
   <script>
     if ('serviceWorker' in navigator) {
       window.addEventListener('load', function() {
-        navigator.serviceWorker.register('/shoppingsite/sw.js') // Ensure the path to your sw.js is correct
+        navigator.serviceWorker.register('sw.js') // Ensure the path to your sw.js is correct
           .then(function(registration) {
             console.log('Service Worker registered with scope:', registration.scope);
           })
