@@ -9,6 +9,7 @@ const urlsToCache = [
     '/contact.html',
     '/offline.html',
     '/index.css',
+    '/offline.html',
     '/images/foodie hunter.png',
     '/images/foodielogo.png',
     '/images/paneer/palak-paneer.jpg',
