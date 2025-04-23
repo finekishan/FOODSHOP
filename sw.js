@@ -7,7 +7,7 @@ const urlsToCache = [
   '/shoppingsite/yourorders.html',
   '/shoppingsite/wishlists.html',
   '/shoppingsite/contact.html',
-  '/shoppingsite/offline.html',  // fallback page
+  '/shoppingsite/offline.html',   // fallback page
   '/shoppingsite/index.css',
   '/shoppingsite/images/foodie hunter.png',
   '/shoppingsite/images/paneer/palak-paneer.jpg',

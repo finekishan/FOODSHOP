@@ -1,8 +1,48 @@
 <!DOCTYPE html>
-<html>
-<head><title>Offline</title></head>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Offline</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background-color: #f4f4f4;
+            color: #333;
+            text-align: center;
+        }
+        .container {
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #e67e22;
+            margin-bottom: 10px;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        a {
+            color: #e67e22;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
 <body>
-  <h2>You're Offline 😕</h2>
-  <p>Please check your internet connection and try again.</p>
+    <div class="container">
+        <h1>You are currently offline</h1>
+        <p>Please check your internet connection to access more content.</p>
+        <p>You can still browse the pages you have visited before.</p>
+        <p><a href="/shoppingsite/">Go back to the homepage</a></p>
+    </div>
 </body>
 </html>
