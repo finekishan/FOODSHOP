@@ -1,23 +1,23 @@
 const CACHE_NAME = 'foodshop-cache-v2';  // Changed to v2 to force update
 const urlsToCache = [
     '/shoppingsite/',
-    '/shoppingsite/index.html',
-    '/shoppingsite/about.html',
-    '/shoppingsite/services.html',
-    '/shoppingsite/yourorders.html',
-    '/shoppingsite/wishlists.html',
-    '/shoppingsite/contact.html',
-    '/shoppingsite/offline.html',
-    '/shoppingsite/index.css',
-    '/shoppingsite/images/foodie hunter.png',
-    '/shoppingsite/images/foodielogo.png',
-    '/shoppingsite/images/paneer/palak-paneer.jpg',
-    '/shoppingsite/images/paneer/kadai-paneer.jpg',
-    '/shoppingsite/images/biryani/veg-biryani.jpg',
-    '/shoppingsite/images/dosa/masala-dosa.jpg',
-    '/shoppingsite/images/freedelevery.jpg',
-    '/shoppingsite/images/event.jpg',
-    '/shoppingsite/images/dine.jpg',
+    '/index.html',
+    '/about.html',
+    '/services.html',
+    '/yourorders.html',
+    '/wishlists.html',
+    '/contact.html',
+    '/offline.html',
+    '/index.css',
+    '/images/foodie hunter.png',
+    '/images/foodielogo.png',
+    '/images/paneer/palak-paneer.jpg',
+    '/images/paneer/kadai-paneer.jpg',
+    '/images/biryani/veg-biryani.jpg',
+    '/images/dosa/masala-dosa.jpg',
+    '/images/freedelevery.jpg',
+    '/images/event.jpg',
+    '/images/dine.jpg',
     'https://cdn.tailwindcss.com',
     'https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css'
 ];
@@ -62,7 +62,7 @@ self.addEventListener('fetch', (event) => {
                     })
                     .catch(() => {
                         if (event.request.mode === 'navigate') {
-                            return caches.match('/shoppingsite/offline.html');
+                            return caches.match('/offline.html');
                         }
                     });
             })
