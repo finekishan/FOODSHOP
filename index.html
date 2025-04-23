@@ -171,68 +171,16 @@
   <script>
     if ('serviceWorker' in navigator) {
         window.addEventListener('load', function() {
-            navigator.serviceWorker.register('/sw.js')
-                .then(function(registration) {
-                    console.log('Service Worker registered with scope:', registration.scope);
-                })
-                .catch(function(error) {
-                    console.log('Service Worker registration failed:', error);
-                });
-        });
-        
-        // Check network status
-        window.addEventListener('online', updateOnlineStatus);
-        window.addEventListener('offline', updateOnlineStatus);
-        
-        function updateOnlineStatus() {
-            const offlineNotification = document.getElementById('offline-notification');
-            if (navigator.onLine) {
-                offlineNotification.style.display = 'none';
-            } else {
-                offlineNotification.style.display = 'block';
-            }
-        }
-        
-        // Initial check
-        updateOnlineStatus();
-    }
-    
-    // Simple navigation functionality
-    document.addEventListener('DOMContentLoaded', function() {
-        const navLinks = document.querySelectorAll('.menu-item');
-        const pages = document.querySelectorAll('.food-container');
-        
-        navLinks.forEach(link => {
-            link.addEventListener('click', function(e) {
-                e.preventDefault();
-                
-                // Hide all pages
-                pages.forEach(page => {
-                    page.classList.remove('active');
-                });
-                
-                // Show selected page
-                const pageId = this.getAttribute('data-page');
-                document.getElementById(pageId).classList.add('active');
-                
-                // Update active link
-                navLinks.forEach(navLink => {
-                    navLink.classList.remove('active');
-                });
-                this.classList.add('active');
+          navigator.serviceWorker.register('/shoppingsite/sw.js')  // adjust path if needed
+            .then(function(registration) {
+              console.log('Service Worker registered with scope:', registration.scope);
+            })
+            .catch(function(error) {
+              console.log('Service Worker registration failed:', error);
             });
         });
-        
-        // Contact form submission (just for demonstration)
-        const contactForm = document.getElementById('contact-form');
-        if (contactForm) {
-            contactForm.addEventListener('submit', function(e) {
-                e.preventDefault();
-                alert('Thank you for your message! We will get back to you soon.');
-                this.reset();
-            });
-        }
-    });
+      }
+      
   </script>
   
 </body>
