@@ -44,6 +44,18 @@
         <p>You can still browse the pages you have visited before.</p>
         <p><a href="/shoppingsite/">Go back to the homepage</a></p>
     </div>
-    <script src="sw.js"></script>
+    <script>
+        if ('serviceWorker' in navigator) {
+          window.addEventListener('load', function() {
+            navigator.serviceWorker.register('/shoppingsite/sw.js') // Ensure the path to your sw.js is correct
+              .then(function(registration) {
+                console.log('Service Worker registered with scope:', registration.scope);
+              })
+              .catch(function(error) {
+                console.log('Service Worker registration failed:', error);
+              });
+          });
+        }
+      </script>
 </body>
 </html>
